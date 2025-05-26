@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c3e50">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Frases Motivacionales</title>
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Motivación">
+    
+    <!-- Estilos -->
+    
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+    <img src="assets/FM-PWA.png" alt="Logo">
+</div>
+        
+        <div class="quote-container">
+            <div class="quote" id="quote">Cargando inspiración...</div>
+            <div class="author" id="author"></div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn" id="newQuoteBtn">Nueva Frase</button>
+            <button class="btn favorite-btn" id="favoriteBtn">❤️ Favorito</button>
+        </div>
+        
+        <div class="favorites-section">
+            <button class="btn" id="toggleFavoritesBtn">Ver Favoritos</button>
+            <div class="favorites-list" id="favoritesList" style="display: none;"></div>
+        </div>
+    </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
