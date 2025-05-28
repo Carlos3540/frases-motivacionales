@@ -2,7 +2,7 @@
   "name": "Frases Motivacionales",
   "short_name": "Motivación",
   "description": "Aplicación de frases motivacionales inspiradoras",
-  "start_url": "/",
+  "start_url": "/frases-motivacionales/",
   "display": "standalone",
   "background_color": "#2c3e50",
   "theme_color": "#667eea",
