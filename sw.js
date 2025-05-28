@@ -1,19 +1,25 @@
 const CACHE_NAME = 'motivational-quotes-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json'
+  'index.html',
+  'manifest.json'
 ];
 
-// Instalación del service worker
+// Instalación del service worker con manejo de errores al cachear
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
+      .then(async cache => {
+        for (const url of urlsToCache) {
+          try {
+            await cache.add(url);
+          } catch (err) {
+            console.warn(`No se pudo cachear: ${url}`, err);
+          }
+        }
+      })
   );
 });
 
-// Intercepción de peticiones
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
