@@ -9,12 +9,12 @@
   "orientation": "portrait",
 "icons": [
   {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/192px-React-icon.svg.png",
+    "src": "/assets/icon-background45.png",
     "sizes": "192x192",
     "type": "image/png"
   },
   {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
+    "src": "/assets/FM-PWA.png",
     "sizes": "512x512",
     "type": "image/png"
   }
