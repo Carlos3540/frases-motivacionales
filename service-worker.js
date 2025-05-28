@@ -2,7 +2,6 @@ self.addEventListener("install", event => {
   event.waitUntil(
     caches.open("frases-cache").then(cache => {
       return cache.addAll([
-        "/frases-motivacionales/",
         "/frases-motivacionales/index.html",
         "/frases-motivacionales/style.css",
         "/frases-motivacionales/app.js",
